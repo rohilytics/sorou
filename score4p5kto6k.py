@@ -12,7 +12,7 @@ conn = sqlite3.connect('/root/sorou-main/reuters.db')
 cursor = conn.cursor()
 
 # Fetch all news articles starting from news_id 6000
-cursor.execute("SELECT news_id, headline, text FROM news WHERE news_id >= 3000 AND news_id <= 6005 ORDER BY news_id")
+cursor.execute("SELECT news_id, headline, text FROM news WHERE news_id >= 4500 AND news_id <= 6005 ORDER BY news_id")
 news_articles = cursor.fetchall()
 
 # Create or connect to the new database where the sentiment will be stored
